@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+.slider {
+    height: 100%;
+}
+.slider__layer {
+    position: absolute;
+    inset: 0; /* top: 0; right: 0; bottom: 0; left: 0; */
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
+.slider__item {
+    overflow: hidden;
+}
+.slider__wrapper {
+    will-change: transform; /* этот параметр говорит о том что данной страничке следует уделить больше аппаратных ресурсов */
+    transform-style: preserve-3d;
+}
